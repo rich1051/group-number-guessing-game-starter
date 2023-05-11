@@ -23,6 +23,12 @@ app.get('/number', function(req, res) {
   res.send(randomNumberList);
 });
 
+app.get('/number', function(req, res) {
+  console.log('Request for /number was made');
+
+  res.send(gameOutcome);
+});
+
 
 app.post('/number', function(req, res) {
   console.log('POST some data:', req.body);
