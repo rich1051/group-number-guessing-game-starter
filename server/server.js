@@ -3,7 +3,7 @@ const bodyParser = require('body-parser')
 const app = express();
 const PORT = 5000;
 
-const gameOutcome = require('./modules/randomNumber')
+const gameOutcome = require('./modules/gameOutcome')
 const randomNumberList = require('./public/scripts/history')
 // This must be added before GET & POST routes.
 app.use(bodyParser.urlencoded({extended:true}))
