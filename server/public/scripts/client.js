@@ -42,7 +42,7 @@ function submitFunction() {
     url: '/number',
     data: {
         firstNumber,
-        secondNumber
+        secondNumber,
     }
     }).then(function(response) {
       console.log('Success!')
@@ -64,13 +64,3 @@ function renderToDom(numbers) {
           `);
       };
 };
-
-// function renderToDom(numbers) {
-//   $('#random-number-text').empty();
-//   // use jQuery to append quotes to DOM
-//       for (let number of numbers) {
-//           $('#random-number-text').append(`
-//               <li>Player One guessed number ${number.firstNumber} and Player Two guessed number ${number.secondNumber}</li>
-//           `);
-//       };
-// };
